@@ -80,9 +80,16 @@ main {
 
 aside {
     padding: 45px;
+    color: #fffefe;
 }
 
-ul {
+aside ul {
     list-style-type: none;
     padding-left: 0px;
+}
+
+img {
+    display: inline-block;
+    width: 12%;
+    /* margin-right: 10% */
 }
