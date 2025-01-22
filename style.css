@@ -46,6 +46,8 @@ isolation: isolate;
 /* END OF CSS RESET */
 
 
+/* BASE GRID LAYOUT */
+
 body {
     display: grid;
     grid-template-columns: 0.21fr 0.79fr;
@@ -69,4 +71,18 @@ aside {
 main {
     background-color: rgba(227,232,241,255);
     grid-column: 2/3
+}
+
+/* END OF BASE GRID LAYOUT */
+
+
+/* SIDEBAR LAYOUT */
+
+aside {
+    padding: 45px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
 }
