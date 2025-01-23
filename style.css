@@ -59,7 +59,7 @@ body {
 
 body {
     display: grid;
-    grid-template-columns: minmax(max-content, 1fr)  4fr;
+    grid-template-columns: minmax(max-content, 1fr) 4fr;
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 100vh;
@@ -170,6 +170,42 @@ header {
     padding: 22.5px 60px 15px 45px;
 }
 
+    /* HEADER TOP */
+    .header-top {
+        display: grid;
+        grid-template-columns: max-content repeat(15, minmax(max-content, 1fr));
+        grid-template-rows: 2em;
+        gap: 1.25em;
+
+        margin-bottom: 1.75em;
+    }
+
+    .searchbar {
+        background-color: rgba(226,233,241,255);
+        border: none;
+        border-radius: 1em;
+        grid-column: 2/12;
+    }
+
+    .searchbar+.icon {
+        grid-column: 14;
+    }
+
+    .header-top * {
+        align-self: center;
+    }
+
+    .header-top img {
+        justify-self: center;
+    }
+
+    .header-top span {
+        font-weight: bold;
+    }
+
+    /* HEADER BOTTOM */
+    
+
 .greeting {
-    display: inline;
+    display: inline-block;
 }
