@@ -52,6 +52,8 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/* END OF FONT */
+
 
 /* BASE GRID LAYOUT */
 
@@ -83,12 +85,51 @@ main {
 /* END OF BASE GRID LAYOUT */
 
 
+/* IMAGES */
+
+img {
+    display: inline-block;
+}
+
+aside img {
+    vertical-align: bottom;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+.logo {
+    width: 2.25em;
+}
+
+.icon {
+    width: 1.5em;
+}
+
+.profile-pic-large, .profile-pic-small {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-pic-large {
+    width: 4.7em;
+}
+
+.profile-pic-small {
+    width: 3.125em;
+}
+
+/* END OF IMAGES */
+
+
 /* SIDEBAR */
 
 aside {
     color: #fffefe;
     padding: 22.5px;
     font-weight: bold;
+    z-index: 2;
 }
 
 .logo-text {
@@ -118,15 +159,17 @@ aside li {
     margin-bottom: 1.25em;
 }
 
-aside img {
-    display: inline-block;
-    vertical-align: bottom;
+/* END OF SIDEBAR */
+
+
+/* HEADER */
+
+header {
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 22.5px 60px 15px 45px;
 }
 
-.logo {
-    width: 2.25em;
-}
-
-.sidebar-icon {
-    width: 1.5em;
+.greeting {
+    display: inline;
 }
