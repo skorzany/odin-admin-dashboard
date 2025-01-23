@@ -59,7 +59,7 @@ body {
 
 body {
     display: grid;
-    grid-template-columns: minmax(max-content, 1fr) 4fr;
+    grid-template-columns: minmax(max-content, 15vw);
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 100vh;
@@ -233,3 +233,5 @@ header {
     .header-bot * {
         align-self: center;
     }
+
+/* END OF HEADER */
