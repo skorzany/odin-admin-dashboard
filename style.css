@@ -46,11 +46,18 @@ isolation: isolate;
 /* END OF CSS RESET */
 
 
+/* FONT */
+
+body {
+    font-family: "Roboto", serif;
+}
+
+
 /* BASE GRID LAYOUT */
 
 body {
     display: grid;
-    grid-template-columns: 1fr  4fr;
+    grid-template-columns: minmax(max-content, 1fr)  4fr;
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 100vh;
@@ -80,7 +87,8 @@ main {
 
 aside {
     color: #fffefe;
-    padding: 7.5%;
+    padding: 22.5px;
+    font-weight: bold;
 }
 
 .logo-text {
@@ -94,7 +102,7 @@ aside {
 }
 
 aside div {
-    margin-bottom: 3.85em;
+    margin-bottom: 3.75em;
 }
 
 aside ul {
