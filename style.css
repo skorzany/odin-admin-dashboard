@@ -303,6 +303,8 @@ main {
         display: grid;
         grid-template-columns: repeat(3, max-content);
         gap: 2em;
+
+        filter: invert(0.25);
     }
 
     .card-icons img:last-of-type {
