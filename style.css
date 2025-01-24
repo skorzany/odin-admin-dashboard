@@ -50,6 +50,7 @@ isolation: isolate;
 
 body {
     font-family: "Roboto", sans-serif;
+    text-wrap: pretty;
 }
 
 /* END OF FONT */
@@ -279,7 +280,6 @@ main {
         grid-template-rows: 1fr max-content;
         gap: 1em;
 
-        text-wrap: pretty;
         padding: 1.25em;
     }
 
@@ -309,4 +309,33 @@ main {
 
     .card-icons img:last-of-type {
         transform: rotate(-90deg);
+    }
+
+    /* MAIN RIGHT */
+    .main-right {
+        display: grid;
+        grid-template-rows: repeat(2, max-content);
+        gap: 2.5em;
+    }
+
+    .info-container {
+        background-color: rgba(255,254,254,255);
+        border-radius: 0.5em;
+        box-shadow: 0.125em 0.25em 0.5em rgba(0, 0, 0, 0.3);
+
+        margin-top: 1em;
+        padding: 1em 1.5em;
+    }
+
+    .info {
+        padding: 1.25em 0.5em;
+    }
+
+    .info p {
+        color: rgba(96,97,97,255);
+    }
+
+    .info:nth-of-type(2) {
+        border-top: 1px solid rgba(209,209,209,255);
+        border-bottom: 1px solid rgba(209,209,209,255);
     }
