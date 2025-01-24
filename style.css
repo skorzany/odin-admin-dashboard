@@ -304,3 +304,7 @@ main {
         grid-template-columns: repeat(3, max-content);
         gap: 2em;
     }
+
+    .card-icons img:last-of-type {
+        transform: rotate(-90deg);
+    }
