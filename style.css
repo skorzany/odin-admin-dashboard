@@ -43,7 +43,7 @@ text-wrap: balance;
 isolation: isolate;
 }
 
-/* END OF CSS RESET */
+/* ===============END OF CSS RESET=============== */
 
 
 /* FONT */
@@ -239,20 +239,76 @@ header {
     }
 
 /* END OF HEADER */
-
+.card {border: 1px solid black;}
+.side-box {border: 1px solid black;}
 
 /* MAIN PART */
 
 main {
     display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.25em;
+}
+
+    /* LEFT SIDE */
+    .main-l {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto repeat(3, 1fr);
+        column-gap: 1.5em;
+        row-gap: 1.75em;
+    }
+
+    .card:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .card:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .card:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .card:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .card:nth-of-type(5) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .card:nth-of-type(6) {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    /* RIGHT SIDE */
+    .main-r {
+        display: grid;
+        grid-auto-rows: auto 1fr;
+        gap: 1.75em;
+    }
+
+/* ==============================OLD CODE============================*/
+/* MAIN PART */
+
+/* main {
+    display: grid;
     grid-template-columns: 7fr 3fr;
     gap: 1.25em;
 
     padding: 2.25em 2em 4em 1.25em;
-}
+} */
 
     /* MAIN LEFT */
-    .main-left {
+    /* .main-left {
         display: grid;
         grid-template-rows: max-content;
     }
@@ -316,17 +372,17 @@ main {
 
     .card-icons img:last-of-type {
         transform: rotate(-90deg);
-    }
+    } */
 
     /* MAIN RIGHT */
-    .main-right {
+    /* .main-right {
         display: grid;
         grid-template-rows: repeat(2, auto);
         gap: 2.5em;
-    }
+    } */
 
         /* ANNOUNCEMENTS */
-        .side-container {
+        /* .side-container {
             background-color: rgba(255,254,254,255);
             border-radius: 0.5em;
             box-shadow: 0.125em 0.25em 0.5em rgba(0, 0, 0, 0.3);
@@ -346,10 +402,10 @@ main {
         .info:nth-of-type(2) {
             border-top: 1px solid rgba(209,209,209,255);
             border-bottom: 1px solid rgba(209,209,209,255);
-        }
+        } */
 
         /* TRENDING */
-        .user-info {
+        /* .user-info {
             margin-bottom: 1.5em;
         }
 
@@ -365,4 +421,4 @@ main {
 
         .user-right>p:nth-of-type(2) {
             color: rgba(96,97,97,255);
-        }
+        } */
