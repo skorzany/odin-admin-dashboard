@@ -344,7 +344,7 @@ main {
 /* END OF CARDS */
 
 
-/* SIDE BOX */
+/* SIDE BOXES */
 
 .side-box {
     padding: 1em 1.5em 1.5em;
@@ -361,7 +361,22 @@ main {
     border-bottom: 1px solid rgba(209,209,209,255);
 }
 
-/* END OF SIDE BOX */
+.user-l, .user-r {
+    display: inline-block;
+}
+
+.user-r {
+    margin-left: 1em;
+    vertical-align: bottom;
+}
+
+.side-content-bot {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
+
+/* END OF SIDE BOXES */
 
 /* ==============================OLD CODE============================*/
 /* MAIN PART */
