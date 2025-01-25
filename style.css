@@ -239,7 +239,6 @@ header {
     }
 
 /* END OF HEADER */
-.card {border: 1px solid black;}
 .side-box {border: 1px solid black;}
 
 /* MAIN PART */
@@ -295,6 +294,54 @@ main {
         grid-auto-rows: auto 1fr;
         gap: 1.75em;
     }
+
+/* END OF MAIN PART */
+
+
+/* CARDS */
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 49fr;
+}
+
+.card-l {
+    background-color: #efb329;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+
+.card-r {
+    background-color: rgba(255,254,254,255);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    /* padding: 1em; */
+}
+
+.card-content {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 1.25em;
+}
+
+.card-text {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+
+    text-wrap: pretty;
+}
+
+.card-icons {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: end;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+/* END OF CARDS */
 
 /* ==============================OLD CODE============================*/
 /* MAIN PART */
