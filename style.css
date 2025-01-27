@@ -314,6 +314,9 @@ main {
 .card {
     display: grid;
     grid-template-columns: 1fr 49fr;
+
+    border-radius: 0.5em;
+    box-shadow: 0.1em 0.2em 0.25em rgba(0, 0, 0, 0.1);
 }
 
 .card-l {
@@ -396,6 +399,7 @@ main p+p {
     padding: 1em 1.5em 1.5em;
     background-color: rgba(255,254,254,255);
     border-radius: 0.5em;
+    box-shadow: 0.1em 0.2em 0.25em rgba(0, 0, 0, 0.1);
 }
 
 .info {
