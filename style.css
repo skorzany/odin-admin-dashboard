@@ -80,7 +80,7 @@ body {
 
 body {
     display: grid;
-    grid-template-columns: minmax(max-content, 15vw);
+    grid-template-columns: minmax(max-content, 17.5vw);
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 100vh;
@@ -100,7 +100,8 @@ aside {
 
 main {
     background-color: rgba(227,232,241,255);
-    grid-column: 2/3
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 /* END OF BASE GRID LAYOUT */
@@ -115,6 +116,8 @@ img {
 
 .logo {
     width: 2.25em;
+    position: relative;
+    top: 0.2em;
 }
 
 .icon {
@@ -259,7 +262,7 @@ main {
     grid-template-columns: 3fr 1fr;
     gap: 1.25em;
 
-    padding: 2.25em 2em 4em 1.25em;
+    padding: 1.25em 2em 2.25em 1.25em;
 }
 
 .main-header {
