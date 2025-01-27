@@ -110,14 +110,7 @@ main {
 
 img {
     display: inline-block;
-}
-
-aside img {
-    vertical-align: bottom;
-}
-
-header img {
-    vertical-align: middle;
+    vertical-align: sub;
 }
 
 .logo {
@@ -130,7 +123,6 @@ header img {
 
 .profile-pic-large, .profile-pic-small {
     border-radius: 50%;
-    vertical-align: middle;
 }
 
 .profile-pic-large {
@@ -156,12 +148,10 @@ aside {
 }
 
 .logo-text {
-    /* font-size: 1.25em; */
     margin-left: 20px;
 }
 
 .side-text {
-    /* font-size: 1em; */
     margin-left: 26px;
 }
 
@@ -210,6 +200,7 @@ header {
         border: none;
         border-radius: 1em;
         grid-column: 2/12;
+        padding-left: 1em;
     }
 
     .searchbar+.icon {
@@ -240,10 +231,6 @@ header {
 
         margin-bottom: 1em;
     }
-
-    /* .greeting p:last-child {
-        font-size: 1em;
-    } */
 
     .header-bot button {
         padding: 0.75em;
