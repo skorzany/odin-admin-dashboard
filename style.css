@@ -50,6 +50,7 @@ isolation: isolate;
 
 body {
     font-family: "Roboto", sans-serif;
+    text-wrap: balance;
 }
 
 /* END OF FONT */
@@ -203,6 +204,10 @@ header {
         justify-self: center;
     }
 
+    .header-top .icon {
+        justify-self: end;
+    }
+
     .header-top span {
         padding-right: 1em;
     }
@@ -246,10 +251,13 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1.25em;
+
+    padding: 2.25em 2em 4em 1.25em;
 }
 
 .main-header {
     margin-bottom: -1em;
+    font-weight: bold;
 }
 
     /* LEFT SIDE */
@@ -318,9 +326,21 @@ main {
     background-color: rgba(255,254,254,255);
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-    /* padding: 1em; */
+    padding: 0 1.25em 2em 1.5em;
 
     display: grid;
+}
+
+.top-row .card-r {
+    padding-top: 2.5em;
+}
+
+.mid-row .card-r {
+    padding-top: 2em;
+}
+
+.bot-row .card-r {
+    padding-top: 1.5em;
 }
 
 .card-content {
@@ -334,6 +354,14 @@ main {
     grid-column: 1 / span 2;
 }
 
+.card-text p:first-child, .info p:first-child {
+    font-weight: bold;
+}
+
+main p+p {
+    color: rgba(100, 100, 100, 255);
+}
+
 .card-icons {
     grid-row: 2;
     grid-column: 2;
@@ -343,6 +371,20 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
+
+    filter: invert(0.25);
+}
+
+.card-icons .icon:last-child {
+    transform: rotate(-90deg);
+}
+
+.left-col .card-icons {
+    padding-right: 0.5em;
+}
+
+.right-col .card-icons {
+    padding-right: 1em;
 }
 
 /* END OF CARDS */
