@@ -112,6 +112,7 @@ main {
 img {
     display: inline-block;
     vertical-align: sub;
+    cursor: pointer;
 }
 
 .logo {
@@ -145,17 +146,18 @@ img {
 
 aside {
     color: #fffefe;
-    padding: 22.5px;
+    padding: 1.4em;
     font-weight: bold;
     z-index: 2;
 }
 
 .logo-text {
-    margin-left: 20px;
+    margin-left: 1.25em;
+    cursor: pointer;
 }
 
 .side-text {
-    margin-left: 26px;
+    margin-left: 1.625em;
 }
 
 aside div {
@@ -173,6 +175,7 @@ aside ul+ul {
 
 aside li {
     margin-bottom: 1.25em;
+    cursor: pointer;
 }
 
 /* END OF SIDEBAR */
@@ -183,7 +186,7 @@ aside li {
 header {
     z-index: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 22.5px 60px 0 45px;
+    padding: 1.4em 3.75em 0 2.8em;
 
     font-weight: bold;
 }
