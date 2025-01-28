@@ -242,6 +242,7 @@ header {
         border: none;
         color: rgba(254,254,255,255);
         border-radius: 2em;
+        cursor: pointer;
     }
 
     .header-bot>button:first-of-type {
